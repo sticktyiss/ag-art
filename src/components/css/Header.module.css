@@ -22,10 +22,18 @@
   font-family: HeaderFont;
   font-size: 4vw;
   padding: 3vh;
+  cursor: pointer;
 }
-.header nav a {
-  text-decoration: none;
+.header nav {
   position: absolute;
   top: 1vw;
   right: 1vw;
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  justify-content: space-between;
+  font-size: 1.5vw;
+}
+.header nav a {
+  text-decoration: none;
 }

@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<Navigate to='/'/>} />
       </Routes>
       <Footer />
     </div>
