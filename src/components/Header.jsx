@@ -1,26 +1,26 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// TODO: npm i react-router-dom
+import classes from './css/Header.module.css'
 
 import logo from '../images/agart-zoomed.jpg'
 
 const Header = () => {
   const styleActiveLink = ({ isActive }) => {
     return {
-      color: isActive ? "" : "", //TODO: Style this out
+      color: isActive ? "#b1be4d" : "#93b341", //TODO: Style this out
     };
   };
 
   const scroll = () => window.scrollTo(0, 0);
 
   return (
-    <div>
-      <img src={logo} alt="logo" />
-      <h1>Alora Goodman</h1>
+    <div className={classes.header}>
+      {/* <img src={logo} alt="logo" /> */}
+      <h1>Alora G Art</h1>
       <nav>
-        <NavLink style={styleActiveLink} to='/'>Home</NavLink>
-        <NavLink style={styleActiveLink} to='gallery'>Gallery</NavLink>
-        <NavLink style={styleActiveLink} to='about'>About</NavLink>
+        <NavLink style={styleActiveLink} to='/' onClick={scroll}>Home</NavLink>
+        <NavLink style={styleActiveLink} to='gallery' onClick={scroll}>Gallery</NavLink>
+        <NavLink style={styleActiveLink} to='about' onClick={scroll}>About</NavLink>
       </nav>
     </div>
   );
