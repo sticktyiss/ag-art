@@ -19,6 +19,7 @@ const Header = () => {
       <h1>Alora Goodman</h1>
       <nav>
         <NavLink style={styleActiveLink} to='/'>Home</NavLink>
+        <NavLink style={styleActiveLink} to='gallery'>Gallery</NavLink>
         <NavLink style={styleActiveLink} to='about'>About</NavLink>
       </nav>
     </div>
