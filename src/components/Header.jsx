@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 // TODO: npm i react-router-dom
 
+import logo from '../images/agart-zoomed.jpg'
+
 const Header = () => {
   const styleActiveLink = ({ isActive }) => {
     return {
@@ -13,11 +15,11 @@ const Header = () => {
 
   return (
     <div>
-      <img src="" />
+      <img src={logo} alt="logo" />
       <h1>Alora Goodman</h1>
       <nav>
-        <NavLink style={styleActiveLink}>Home</NavLink>
-        <NavLink style={styleActiveLink}>About</NavLink>
+        <NavLink style={styleActiveLink} to='/'>Home</NavLink>
+        <NavLink style={styleActiveLink} to='about'>About</NavLink>
       </nav>
     </div>
   );
