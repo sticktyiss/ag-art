@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ag-art/static/css/main.bc765974.css",
+    "main.js": "/ag-art/static/js/main.fd9448dc.js",
+    "static/media/agart-zoomed.jpg": "/ag-art/static/media/agart-zoomed.84a450a297032dfd2ed2.jpg",
+    "index.html": "/ag-art/index.html",
+    "main.bc765974.css.map": "/ag-art/static/css/main.bc765974.css.map",
+    "main.fd9448dc.js.map": "/ag-art/static/js/main.fd9448dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc765974.css",
+    "static/js/main.fd9448dc.js"
+  ]
+}
