@@ -9,11 +9,11 @@ import logo from "../images/agart-zoomed.jpg";
 const Header = () => {
   const navigate = useNavigate();
 
-  const [dropDownMenu, setDropDownMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const styleActiveLink = ({ isActive }) => {
     return {
-      color: isActive ? "#433070" : "#24153b", //TODO: Style this out
+      color: isActive ? "#24153b" : "#24153b", //TODO: Style this out
     };
   };
 
@@ -27,9 +27,24 @@ const Header = () => {
         <NavLink style={styleActiveLink} to="/" onClick={scroll}>
           Home
         </NavLink>
-        <NavLink style={styleActiveLink} to="gallery" onClick={scroll}>
+        <NavLink style={styleActiveLink} to='gallery' onClick={() => setShowMenu(!showMenu)}>
           Gallery
         </NavLink>
+        {/* {showMenu ? (
+          <div className="dropDownMenu">
+            <NavLink to="paintings" onClick={scroll}>
+              Paintings
+            </NavLink>
+            <NavLink to="Drawings" onClick={scroll}>
+              Drawings
+            </NavLink>
+            <NavLink to="photography" onClick={scroll}>
+              Photography
+            </NavLink>
+          </div>
+        ) : (
+          ""
+        )} */}
         <NavLink style={styleActiveLink} to="about" onClick={scroll}>
           About
         </NavLink>
