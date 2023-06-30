@@ -5,8 +5,8 @@ import classes from "./css/Footer.module.css";
 
 const Footer = () => {
   return (
-    <div>
-      <a href="https://linktr.ee/aloragart">
+    <div className={classes.footer}>
+      <a href="https://linktr.ee/aloragart" target='_blank'>
         <img src={linktree} />
       </a>
     </div>
