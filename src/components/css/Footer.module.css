@@ -1,10 +1,23 @@
 .footer {
   height: 20vh;
-  background-color: #814bd2;
-  color: #24153b;
+  background-color: #24153b;
+  /* color: #24153b; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer a {
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: padding 1s ease, background-color .5s ease;
+}
+.footer a:hover {
+  background-color: #814bd2;
+  padding: 2vh;
 }
 .footer img {
   height: 5vh;
