@@ -10,12 +10,12 @@ import Photography from './Photography'
 const Gallery = () => {
   const [galleryItems, setGalleryItems] = useState('')
 
-  const scroll = () => window.scrollTo(0, 0);
+  // const scroll = () => window.scrollTo(0, 0);
 
   return (
     <div className={classes.main}>
       <h2>Gallery</h2>
-      <h3>"The world is but a canvas to our imagination."<br/>- Henry David Thoreau</h3>
+      <h3>"The world is but a canvas to our imagination."<br/><span>- Henry David Thoreau</span></h3>
       <nav>
         <button onClick={() => setGalleryItems('paintings')}>
           Paintings
