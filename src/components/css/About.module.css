@@ -1,4 +1,5 @@
-.backgroundCycle {
-  /* height: 90vh; */
-  transition: background-image 3s ease;
+.about {
+  min-height: 20vh;
+  background-color: black;
+  color: white;
 }

@@ -16,13 +16,13 @@
   align-self: flex-start;
 }
 header div {
-  background-image: url("../../images/lavender-1117275.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -30vh;
   background-position-x: center;
   height: 50vh;
   width: 100vw;
+  transition: background-image 3s ease;
 }
 .header nav {
   margin: 1vh;
