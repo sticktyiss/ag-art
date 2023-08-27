@@ -1,7 +1,6 @@
 .footer {
   height: 20vh;
-  background-color: #24153b;
-  /* color: #24153b; */
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +12,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: padding 1s ease, background-color .5s ease;
+  transition: padding 1s ease, background-color .75s ease;
 }
 .footer a:hover {
-  background-color: #814bd2;
+  background-color: white;
   padding: 2vh;
 }
 .footer img {

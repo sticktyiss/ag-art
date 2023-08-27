@@ -10,14 +10,6 @@ import logo from "../images/agart-zoomed.jpg";
 const Header = () => {
   const navigate = useNavigate();
 
-  const [showMenu, setShowMenu] = useState(false);
-
-  const styleActiveLink = ({ isActive }) => {
-    return {
-      color: isActive ? "white" : "white", //TODO: Style this out
-    };
-  };
-
   const scroll = () => window.scrollTo(0, 0);
 
   return (
@@ -25,13 +17,13 @@ const Header = () => {
       <h1 onClick={() => navigate("/")}>Alora G Art</h1>
       <div/> {/* Image in the header */}
       <nav>
-        <NavLink style={styleActiveLink} to="/" onClick={scroll}>
+        <NavLink to="/" onClick={scroll}>
           Home
         </NavLink>
-        <NavLink style={styleActiveLink} to='gallery' onClick={() => setShowMenu(!showMenu)}>
+        <NavLink to='gallery' onClick={scroll}>
           Gallery
         </NavLink>
-        <NavLink style={styleActiveLink} to="about" onClick={scroll}>
+        <NavLink to="about" onClick={scroll}>
           About
         </NavLink>
       </nav>
