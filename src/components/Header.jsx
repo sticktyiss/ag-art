@@ -3,12 +3,18 @@ import { NavLink } from "react-router-dom";
 import classes from "./css/Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import titleImg from "../images/lavender-1117275.jpg"
 
-import logo from "../images/agart-zoomed.jpg";
+import img1 from "../images/walkway3.jpg";
+import img2 from "../images/pookie.jpg";
+import img3 from "../images/walkway2.jpg";
+import img4 from "../images/railwave.jpg";
+import img5 from "../images/walkway1.jpg";
+import img6 from "../images/giraffe.jpg";
+import img7 from "../images/car.jpg";
+import img8 from "../images/lighthouse.jpg";
+import img9 from "../images/matt.jpg";
+import img10 from "../images/ocean.jpg";
 
-import img1 from "../images/ag-art-flower.jpg";
-import img2 from "../images/lavender-1117275.jpg";
 
 
 const Header = () => {
@@ -17,7 +23,7 @@ const Header = () => {
   const scroll = () => window.scrollTo(0, 0);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [img1, img2];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
   const changeBackgroundImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
