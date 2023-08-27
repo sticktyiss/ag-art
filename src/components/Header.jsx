@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import classes from "./css/Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import titleImg from "../images/lavender-1117275.jpg"
 
 import logo from "../images/agart-zoomed.jpg";
 
@@ -13,7 +14,7 @@ const Header = () => {
 
   const styleActiveLink = ({ isActive }) => {
     return {
-      color: isActive ? "#24153b" : "#24153b", //TODO: Style this out
+      color: isActive ? "white" : "white", //TODO: Style this out
     };
   };
 
@@ -21,8 +22,8 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      {/* <img src={logo} alt="logo" /> */}
       <h1 onClick={() => navigate("/")}>Alora G Art</h1>
+      <div/> {/* Image in the header */}
       <nav>
         <NavLink style={styleActiveLink} to="/" onClick={scroll}>
           Home
@@ -30,21 +31,6 @@ const Header = () => {
         <NavLink style={styleActiveLink} to='gallery' onClick={() => setShowMenu(!showMenu)}>
           Gallery
         </NavLink>
-        {/* {showMenu ? (
-          <div className="dropDownMenu">
-            <NavLink to="paintings" onClick={scroll}>
-              Paintings
-            </NavLink>
-            <NavLink to="Drawings" onClick={scroll}>
-              Drawings
-            </NavLink>
-            <NavLink to="photography" onClick={scroll}>
-              Photography
-            </NavLink>
-          </div>
-        ) : (
-          ""
-        )} */}
         <NavLink style={styleActiveLink} to="about" onClick={scroll}>
           About
         </NavLink>

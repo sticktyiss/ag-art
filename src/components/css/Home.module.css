@@ -1,8 +1,4 @@
 .main {
-  background-image: url('../../images/lavender-1117275.jpg');
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-	background-size: cover;
   height: 90vh;
   width: auto;
 }
